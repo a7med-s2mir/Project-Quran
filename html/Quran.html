@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/all.min.css">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/ayat.css">
+  <!-- Google Font [ Cairo Font ] -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="../image/logo-quran.png" type="image/png">
+  <!-- End Google Font -->
+  <title>Quran | Project</title>
+</head>
+
+<body>
+
+  <!-- Start Setting-box -->
+  <div class="setting-box">
+    <div class="icon">
+      <i class="fa-solid fa-gear"></i>
+    </div>
+    <div class="option-box">
+      <h2>Color's</h2>
+      <ul class="color">
+        <li class="active" data-color="#00b06e"></li>
+        <li data-color="#03a9f4"></li>
+        <li data-color="#3f51b5"></li>
+        <li data-color="#f44336"></li>
+        <li data-color="#ff5722"></li>
+      </ul>
+    </div>
+    <div class="option-box">
+      <h2>Dark Mode</h2>
+      <div class="darkOption">
+        <span id="yes" data-option="yes" data-dark="#26282c">on</span>
+        <span id="no" class="active" data-option="no" data-dark="#f7f7f7">off</span>
+      </div>
+    </div>
+    <button class="clearStorage">Clear Option</button>
+  </div>
+  <!-- End setting-box -->
+
+
+  <!-- Start Navbar -->
+  <div class="navbar sticky-top" dir="ltr">
+    <div class="container-fluid">
+      <div class="header-area">
+        <a href="../index.html" class="logo">
+          <img src="../image/logo.png" alt="">
+          <h2>قرآن</h2>
+        </a>
+        <i class="fa-solid fa-bars" id="toggle"></i>
+        <ul class="links">
+          <li><a href="Quran.html" class="active">تصفح الايات</a></li>
+          <li><a href="../index.html">الرئيسية</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end Navbar -->
+  <!-- Start Content -->
+  <div class="content con-Quran">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-9 right-col">
+          <div class="right-content">
+            <div class="wel-infro">
+              <div class="text">
+                <h2>بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</h2>
+              </div>
+              <input type="text" placeholder="ابحث عن السورة التي تريدها" id="input-search">
+            </div>
+            <div class="right-section">
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-3 left-col">
+          <div class="left-section">
+            <div class="box-left">
+              <img src="../image/logo.png" alt="">
+              <h2>القرآن
+                الكريم</h2>
+            </div>
+            <div class="box-setting">
+              <div class="text">
+                <h2>اخر قراءة</h2>
+                <p>لا يوجد</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+            </div>
+            <div class="box-setting">
+              <div class="text">
+                <h2>اخر ما استمعت</h2>
+                <p>لا يوجد</p>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+            </div>
+            <div class="box-setting">
+              <!-- Start Footer -->
+                <footer>
+                  <div class="secondary-footer">
+                    <div class="container">
+                      <div class="copyright" style="color: #00b06e;">
+                        <div class="row text-center">
+                          <div class="col">Copyright 2023 by
+                            <u>
+                              <a href="https://www.facebook.com/profile.php?id=100009395336399" target="_blank">A.S</a>
+                            </u> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              <!-- End Footer -->
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Content -->
+  <!-- pop-box -->
+  <div class="pop-box">
+    <i class="fa-solid fa-xmark" id="close-button"></i>
+    <div class="aya-content">
+    </div>
+  </div>
+  <!-- End pop-box -->
+
+  <!-- MyScript's -->
+  <script src="../JS/jquery-3.6.1.min.js"></script>
+  <script src="../JS/bootstrap.bundle.min.js"></script>
+  <script src="../JS/Quran.js"></script>
+</body>
+
+</html>

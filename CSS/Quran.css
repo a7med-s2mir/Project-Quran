@@ -1,0 +1,109 @@
+.con-ayah{
+  padding-bottom: 15px;
+  background-color: #EEE;
+}
+
+body.darkmode .con-ayah {
+  background-color: var(--dark-color);
+}
+
+.pop-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  padding: 30px;
+  overflow-y: scroll;
+  display: none;
+  animation: show-pop .5s;
+  background-image: url(../image/model/model2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.pop-box::-webkit-scrollbar{
+  width: 10px;
+}
+
+.pop-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .68);
+}
+
+.pop-box.show {
+  display: block;
+}
+
+@keyframes show-pop {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pop-box #close-button {
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: fixed;
+  background-color: var(--main-color);
+  color: #FFF !important;
+  transition: .3s;
+  z-index: 4;
+}
+
+.pop-box #close-button:hover{
+  background-color: #f45;
+}
+
+.pop-box .aya-content {
+  position: relative;
+  top: 70px
+}
+
+.pop-box .aya-content .info-ayah {
+  margin-bottom: 15px;
+}
+
+.aya-content .ayah-content {
+  padding: 15px;
+  border-bottom: 2px solid var(--main-color);
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFF;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.aya-content .ayah-content audio {
+  width: 500px;
+}
+@media(min-width:0px) and (max-width:767px){
+  .aya-content .ayah-content {
+    width: 300px !important;
+  }
+    .aya-content .ayah-content audio {
+      width: 280px !important;
+    }
+}
+
+@media(max-width:767px) {
+  .aya-content .ayah-content audio {
+    width: 350px;
+  }
+}
